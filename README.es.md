@@ -43,27 +43,13 @@ Funciona tanto si sos un developer experimentado al que se le escapan cosas fuer
 
 ## Instalación
 
-### Recomendada: Plugin Marketplace
-
-```bash
-/plugin marketplace add gastonfoncea/unknown-unknowns-skill
-```
-
-Se actualiza automáticamente cuando la skill mejora.
-
-### Manual: Global (todos los proyectos)
-
-```bash
 git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+
+### Global (todos los proyectos)
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
-```
 
-### Manual: Proyecto específico
-
-```bash
-git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+### O para un proyecto específico
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
-```
 
 ## Uso
 
