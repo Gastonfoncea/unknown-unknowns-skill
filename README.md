@@ -1,5 +1,7 @@
 # Unknown Unknowns Detector
 
+> 🇪🇸 [Leer en español](README.es.md)
+
 A skill for Claude Code (and compatible AI coding tools) that surfaces the risks, gaps, and blind spots you don't know you're missing — before they become problems.
 
 ## The Problem
