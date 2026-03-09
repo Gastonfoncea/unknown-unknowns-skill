@@ -2,7 +2,7 @@
 
 > 🇪🇸 [Leer en español](README.es.md)
 
-A skill for Claude Code (and compatible AI coding tools) that surfaces the risks, gaps, and blind spots you don't know you're missing — before they become problems.
+A skill that surfaces the risks, gaps, and blind spots you don't know you're missing — before they become problems.
 
 ## The Problem
 
@@ -43,13 +43,22 @@ It works whether you're a seasoned developer missing edge cases outside your dom
 
 ## Installation
 
-git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+### Claude Code
 
-### Global
-cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
+```bash
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git ~/.claude/skills/unknown-unknowns
+```
 
-### Specific project
-cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
+Restart Claude Code. Done.
+
+### Cursor
+
+```bash
+cd your-project
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git .cursor/skills/unknown-unknowns
+```
+
+Restart Cursor. Done.
 
 ## Usage
 
@@ -61,14 +70,7 @@ The skill triggers automatically when you say things like:
 - "Audit my project before launch"
 - "What could go wrong?"
 
-You can also be direct:
-
-- "Run the unknown unknowns skill on this project"
-- "Analyze the security and architecture blind spots"
-
 ## Example
-
-Here's a condensed example analyzing a macOS note-taking app with AI integration:
 
 **Discovery:**
 > "What are you building, what stage, and which dimensions should I analyze?"
@@ -91,10 +93,10 @@ Here's a condensed example analyzing a macOS note-taking app with AI integration
 >
 > **Top actions:** (1) Decide if you need a backend — your entire business model depends on it. (2) Create the AI provider abstraction. (3) Add retry + timeout on API calls.
 
-## How It Works
+## Structure
 
 ```
-unknown-unknowns/
+unknown-unknowns-skill/
 ├── SKILL.md              # Core skill logic and workflow
 └── references/
     ├── security.md       # Security blind spots checklist
@@ -105,11 +107,9 @@ unknown-unknowns/
     └── ai-agents.md      # AI agent-specific risks checklist
 ```
 
-The skill reads only the reference files relevant to the dimensions you chose — it doesn't load everything into context.
-
 ## Compatibility
 
-Built for Claude Code, but the SKILL.md format works with any tool that supports it:
+The SKILL.md format is an open standard. This skill works with:
 
 - Claude Code
 - Cursor
