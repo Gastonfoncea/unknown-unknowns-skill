@@ -54,14 +54,14 @@ Se actualiza automáticamente cuando la skill mejora.
 ### Manual: Global (todos los proyectos)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/unknown-unknowns-skill.git
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
 ```
 
 ### Manual: Proyecto específico
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/unknown-unknowns-skill.git
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
 ```
 
