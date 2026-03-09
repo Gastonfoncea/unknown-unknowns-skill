@@ -2,7 +2,7 @@
 
 > 🇬🇧 [Read in English](README.md)
 
-Una skill para Claude Code (y herramientas de AI coding compatibles) que detecta los riesgos, gaps y puntos ciegos que no sabés que tenés — antes de que se conviertan en problemas.
+Una skill que detecta los riesgos, gaps y puntos ciegos que no sabés que tenés — antes de que se conviertan en problemas.
 
 ## El Problema
 
@@ -43,13 +43,22 @@ Funciona tanto si sos un developer experimentado al que se le escapan cosas fuer
 
 ## Instalación
 
-git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+### Claude Code
 
-### Global (todos los proyectos)
-cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
+```bash
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git ~/.claude/skills/unknown-unknowns
+```
 
-### O para un proyecto específico
-cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
+Reiniciá Claude Code. Listo.
+
+### Cursor
+
+```bash
+cd tu-proyecto
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git .cursor/skills/unknown-unknowns
+```
+
+Reiniciá Cursor. Listo.
 
 ## Uso
 
@@ -61,14 +70,7 @@ La skill se activa automáticamente cuando decís cosas como:
 - "Auditá mi proyecto antes de lanzar"
 - "¿Qué puede salir mal?"
 
-También podés ser directo:
-
-- "Corré la skill de unknown unknowns en este proyecto"
-- "Analizá los blind spots de seguridad y arquitectura"
-
 ## Ejemplo
-
-Un ejemplo condensado analizando una macOS app de notas con integración de AI:
 
 **Discovery:**
 > "¿Qué estás construyendo, en qué stage, y qué dimensiones analizo?"
@@ -91,10 +93,10 @@ Un ejemplo condensado analizando una macOS app de notas con integración de AI:
 >
 > **Acciones top:** (1) Decidí si necesitás backend — todo tu modelo de negocio depende de esto. (2) Creá la abstracción de AI provider. (3) Agregá retry + timeout en las llamadas a la API.
 
-## Cómo Funciona
+## Estructura
 
 ```
-unknown-unknowns/
+unknown-unknowns-skill/
 ├── SKILL.md              # Lógica core y workflow de la skill
 └── references/
     ├── security.md       # Checklist de blind spots de seguridad
@@ -105,11 +107,9 @@ unknown-unknowns/
     └── ai-agents.md      # Checklist de riesgos de agentes AI
 ```
 
-La skill lee solo los archivos de referencia relevantes a las dimensiones que elegiste — no carga todo en contexto.
-
 ## Compatibilidad
 
-Hecha para Claude Code, pero el formato SKILL.md funciona con cualquier herramienta que lo soporte:
+El formato SKILL.md es un estándar abierto. Esta skill funciona con:
 
 - Claude Code
 - Cursor
