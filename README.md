@@ -43,10 +43,10 @@ It works whether you're a seasoned developer missing edge cases outside your dom
 
 ## Installation
 
-# Global (todos los proyectos)
+**Global**
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
 
-# O para un proyecto específico
+**Specific project**
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
 
 ## Usage
