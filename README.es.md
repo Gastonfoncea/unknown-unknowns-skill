@@ -46,7 +46,7 @@ Funciona tanto si sos un developer experimentado al que se le escapan cosas fuer
 ### Recomendada: Plugin Marketplace
 
 ```bash
-/plugin marketplace add YOUR_USERNAME/unknown-unknowns-skill
+/plugin marketplace add gastonfoncea/unknown-unknowns-skill
 ```
 
 Se actualiza automáticamente cuando la skill mejora.
