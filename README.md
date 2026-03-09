@@ -43,27 +43,11 @@ It works whether you're a seasoned developer missing edge cases outside your dom
 
 ## Installation
 
-### Recommended: Plugin Marketplace
-
-```bash
-/plugin marketplace add gastonfoncea/unknown-unknowns-skill
-```
-
-Updates automatically when the skill is improved.
-
-### Manual: Global (all projects)
-
-```bash
-git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+# Global (todos los proyectos)
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
-```
 
-### Manual: Project-specific
-
-```bash
-git clone https://github.com/gastonfonceaE/unknown-unknowns-skill.git
+# O para un proyecto específico
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
-```
 
 ## Usage
 
