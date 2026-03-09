@@ -46,7 +46,7 @@ It works whether you're a seasoned developer missing edge cases outside your dom
 ### Recommended: Plugin Marketplace
 
 ```bash
-/plugin marketplace add YOUR_USERNAME/unknown-unknowns-skill
+/plugin marketplace add gastonfoncea/unknown-unknowns-skill
 ```
 
 Updates automatically when the skill is improved.
@@ -54,14 +54,14 @@ Updates automatically when the skill is improved.
 ### Manual: Global (all projects)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/unknown-unknowns-skill.git
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
 ```
 
 ### Manual: Project-specific
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/unknown-unknowns-skill.git
+git clone https://github.com/gastonfonceaE/unknown-unknowns-skill.git
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
 ```
 
