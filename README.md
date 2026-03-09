@@ -43,10 +43,12 @@ It works whether you're a seasoned developer missing edge cases outside your dom
 
 ## Installation
 
-**Global**
+git clone https://github.com/gastonfoncea/unknown-unknowns-skill.git
+
+### Global
 cp -r unknown-unknowns-skill ~/.claude/skills/unknown-unknowns
 
-**Specific project**
+### Specific project
 cp -r unknown-unknowns-skill .claude/skills/unknown-unknowns
 
 ## Usage
